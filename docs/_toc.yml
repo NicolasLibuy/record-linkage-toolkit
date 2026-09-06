@@ -21,3 +21,21 @@ parts:
       - file: content/01_why/demand-for-linked-data.md
       - file: content/01_why/limits-of-single-source.md
       - file: content/01_why/linkage-as-a-solution.md
+
+  - caption: 2. Producing linked data
+    numbered: true
+    chapters:
+      - file: content/02_producing/defining-the-use-case.md
+      - file: content/02_producing/data-readiness.md
+        sections:
+          - file: content/02_producing/nb01-inspect-and-prepare.ipynb
+      - file: content/02_producing/anonymisation.md
+        sections:
+          - file: content/02_producing/nb02-pseudonymisation.ipynb
+      - file: content/02_producing/linkage-approaches.md
+        sections:
+          - file: content/02_producing/nb03-deterministic-rules.ipynb
+          - file: content/02_producing/nb04-fellegi-sunter-by-hand.ipynb
+      - file: content/02_producing/blocking.md
+        sections:
+          - file: content/02_producing/nb05-blocking-strategies.ipynb
