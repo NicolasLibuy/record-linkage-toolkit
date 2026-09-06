@@ -71,9 +71,9 @@ A living section, open to offices beyond the original cohort.
 
 | Page | Status | Scope |
 |:--|:--|:--|
-| `linkage-by-use-case-domain.md` | ⬜ | Organised by domain: civil registration and vital statistics, health, migration, social protection, business and population registers, with the identifiers and failure modes typical of each |
-| `country-case-examples.md` | ⬜ | The living list, plus the publication criterion and a submission outline. Only linkage **in production or in use for official statistics** is published; a proposal is not yet a practice. Launches without cohort cases: as of September 2026 none of the country projects had reached production. Populated case by case in agreement with UNSD |
-| `other-practices.md` | ⬜ | Externally documented national cases, each verified against the primary document: UK (ONS/UKSA), Uruguay (INE, Censo Combinado 2023), Colombia (DANE REBP; DANE/JEP/CEV/HRDAG deduplication), Chile (Registro Social de Hogares, as a contrasting deterministic case). Statistics Norway's business register remains a named placeholder pending a reference from UNSD |
+| `linkage-by-use-case-domain.md` | ✅ | Organised by domain: civil registration and vital statistics, health, migration, social protection, business and population registers, with the identifiers and failure modes typical of each |
+| `country-case-examples.md` | ✅ | The living list, plus the publication criterion and a submission outline. Only linkage **in production or in use for official statistics** is published; a proposal is not yet a practice. Launches without cohort cases: as of September 2026 none of the country projects had reached production. Populated case by case in agreement with UNSD |
+| `other-practices.md` | ✅ | Externally documented national cases, each verified against the primary document: UK (ONS/UKSA), Uruguay (INE, Censo Combinado 2023), Colombia (DANE REBP; DANE/JEP/CEV/HRDAG deduplication), Chile (Registro Social de Hogares, as a contrasting deterministic case). Statistics Norway's business register remains a named placeholder pending a reference from UNSD |
 
 ## Section 6 — Reference materials
 

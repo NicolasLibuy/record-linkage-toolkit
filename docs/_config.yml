@@ -43,3 +43,9 @@ sphinx:
   config:
     html_show_copyright: false
     html_last_updated_fmt: "%b %d, %Y"
+    # These two DOIs resolve correctly but their publishers return 403 to
+    # automated requests. Both were validated against the DOI registry by
+    # content negotiation, which returned full and correct citation metadata.
+    linkcheck_ignore:
+      - "https://doi\\.org/10\\.1080/01621459\\.1969\\.10501049"
+      - "https://doi\\.org/10\\.1177/2053951717745678"

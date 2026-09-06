@@ -68,6 +68,13 @@ parts:
       - file: content/04_production/adoption-challenges.md
       - file: content/04_production/enabling-environment.md
 
+  - caption: 5. Country practices
+    numbered: true
+    chapters:
+      - file: content/05_practices/linkage-by-use-case-domain.md
+      - file: content/05_practices/other-practices.md
+      - file: content/05_practices/country-case-examples.md
+
   - caption: 6. Reference materials
     numbered: true
     chapters:

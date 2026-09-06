@@ -52,7 +52,7 @@ possible, by supplying auxiliary variables at unit level.
 
 Its country practices section, which has grown over time and continues to add
 contributors, is the model for
-Section 5 of this toolkit.
+[Section 5](../05_practices/country-case-examples.md) of this toolkit.
 
 ## Developing standard tools for data linkage — ONS (2021)
 

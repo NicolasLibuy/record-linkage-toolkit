@@ -211,4 +211,4 @@ to reach level 4 but what single change moves them to level 2. Judging by where
 projects actually stall, that change is usually the access agreement and the
 reproducibility checklist — not the model.
 
-Section 5 turns to what offices have done with linkage once these arrangements are in place.
+[Section 5](../05_practices/linkage-by-use-case-domain.md) turns to what offices have done with linkage once these arrangements are in place.
