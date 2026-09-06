@@ -54,9 +54,9 @@ outline; a notebook accompanies every page that has code.
 
 | Page | Notebook | Status | Scope | Written from |
 |:--|:--|:--|:--|:--|
-| `communicating-methods.md` | — | ⬜ | What to publish about a linkage, for a general and for a technical audience; a documentation template; an eight-item reproducibility checklist | Lecture 12b; Tutorial 11 |
-| `communicating-results.md` | `nb11-charts-and-exports` | ⬜ | Match-weight chart, waterfall chart, m/u parameter chart, comparison viewer dashboard, cluster outputs: what each is for, how to read it, how to export | Lectures 11, 12b; Tutorials 9, 11 |
-| `quality-metric-reference.md` | — | ⬜ | Single reference page for every metric the toolkit uses: match rate; RR/PC/PQ; the confusion matrix; sensitivity, specificity, PPV, NPV, F-measure; clerical review; plausibility checks; linkage bias | Lectures 7, 10, 12a |
+| `communicating-methods.md` | — | ✅ | What to publish about a linkage, for a general and for a technical audience; a documentation template; an eight-item reproducibility checklist | Lecture 12b; Tutorial 11 |
+| `communicating-results.md` | `nb11-charts-and-exports` | ✅ | Match-weight chart, waterfall chart, m/u parameter chart, comparison viewer dashboard, cluster outputs: what each is for, how to read it, how to export | Lectures 11, 12b; Tutorials 9, 11 |
+| `quality-metric-reference.md` | — | ✅ | Single reference page for every metric the toolkit uses: match rate; RR/PC/PQ; the confusion matrix; sensitivity, specificity, PPV, NPV, F-measure; clerical review; plausibility checks; linkage bias | Lectures 7, 10, 12a |
 
 ## Section 4 — From pilot to production
 

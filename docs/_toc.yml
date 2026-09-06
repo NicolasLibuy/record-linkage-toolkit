@@ -52,3 +52,12 @@ parts:
       - file: content/02_producing/end-to-end-example.md
         sections:
           - file: content/02_producing/nb10-end-to-end.ipynb
+
+  - caption: 3. Communicating and assessing quality
+    numbered: true
+    chapters:
+      - file: content/03_quality/communicating-methods.md
+      - file: content/03_quality/communicating-results.md
+        sections:
+          - file: content/03_quality/nb11-charts-and-exports.ipynb
+      - file: content/03_quality/quality-metric-reference.md
