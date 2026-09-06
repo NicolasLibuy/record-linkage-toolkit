@@ -1,0 +1,16 @@
+# Table of contents for the toolkit.
+#
+# Sections are added here as they are written, so the published site never
+# shows placeholder pages. The full intended structure is in
+# docs/content-spec.md.
+
+format: jb-book
+root: README
+
+parts:
+  - caption: About this toolkit
+    chapters:
+      - file: content/00_front/how-to-use.md
+      - file: content/00_front/contributors.md
+      - file: data/README.md
+        title: The synthetic sample data

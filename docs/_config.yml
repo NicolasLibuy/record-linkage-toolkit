@@ -1,0 +1,45 @@
+# Toolkit on Deterministic and Probabilistic Record Linkage
+# for the Production of Official Statistics
+#
+# Built with Jupyter Book v1 and published to GitHub Pages.
+
+title: Deterministic and Probabilistic Record Linkage
+author: UNSD / Data for Now initiative
+only_build_toc_files: true
+
+exclude_patterns:
+  - .venv
+  - _build
+  - docs/content-spec.md
+
+repository:
+  url: https://github.com/NicolasLibuy/record-linkage-toolkit
+  branch: main
+
+html:
+  home_page_in_navbar: false
+  use_edit_page_button: true
+  use_repository_button: true
+  use_issues_button: true
+  baseurl: https://nicolaslibuy.github.io/record-linkage-toolkit
+  extra_footer: |
+    <div>
+      Prepared under the United Nations Statistics Division's Data for Now initiative.
+      The designations employed and the presentation of material in this toolkit do not
+      imply the expression of any opinion whatsoever on the part of the United Nations
+      concerning the legal status of any country, territory or area.
+    </div>
+
+# Notebooks are committed with their outputs and are NOT re-executed at build
+# time. Splink's u-probability estimation is not seeded, so re-running the
+# notebooks in CI would silently change the figures quoted in the narrative.
+execute:
+  execute_notebooks: off
+
+bibtex_bibfiles:
+  - docs/bibliography.bib
+
+sphinx:
+  config:
+    html_show_copyright: false
+    html_last_updated_fmt: "%b %d, %Y"

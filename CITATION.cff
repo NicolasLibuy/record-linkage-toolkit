@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: >-
+  Toolkit on Deterministic and Probabilistic Record Linkage
+  for the Production of Official Statistics
+message: Please cite this toolkit if you use it in your work.
+type: software
+authors:
+  - given-names: Nicolas
+    family-names: Libuy
+  - name: United Nations Statistics Division
+repository-code: https://github.com/NicolasLibuy/record-linkage-toolkit
+url: https://nicolaslibuy.github.io/record-linkage-toolkit
+abstract: >-
+  A practical toolkit for national statistical offices on deterministic and
+  probabilistic record linkage, covering data readiness, pseudonymisation,
+  linkage design, blocking, Fellegi-Sunter estimation with Splink, threshold
+  selection, clustering, quality evaluation and documentation. Prepared under
+  the UNSD Data for Now initiative.
+license: CC-BY-4.0

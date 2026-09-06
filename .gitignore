@@ -1,0 +1,9 @@
+_build/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+
+# Outputs produced by running the notebooks locally
+content/**/outputs/
+*.duckdb
