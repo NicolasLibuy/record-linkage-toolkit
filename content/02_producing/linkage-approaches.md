@@ -183,7 +183,7 @@ The scoring framework is necessary but not sufficient. What unlocks it is
 comparing values that are *similar* rather than identical: string-similarity
 measures with several levels of partial agreement, and phonetic encoding so that
 names that sound alike compare alike. That is what
-chapter 2.6 adds, and it is where recall on this
+[chapter 2.6](implementing-in-splink.md) adds, and it is where recall on this
 data finally moves.
 
 If you take one thing from this chapter, take that. Probabilistic linkage is not
@@ -211,7 +211,7 @@ implementation, and it has three practical implications:
 - use term-frequency adjustments, so agreement on a common value is not weighted
   like agreement on a rare one (chapter 2.6);
 - **evaluate the output empirically** rather than trusting the probabilities
-  because the mathematics is correct (chapter 2.8).
+  because the mathematics is correct ([chapter 2.8](evaluation.md)).
 
 ## Choosing between them
 

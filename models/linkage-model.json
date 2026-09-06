@@ -1,0 +1,295 @@
+{
+    "link_type": "link_only",
+    "probability_two_random_records_match": 3.0074074074074073e-06,
+    "retain_matching_columns": true,
+    "retain_intermediate_calculation_columns": true,
+    "additional_columns_to_retain": [
+        "true_person_id"
+    ],
+    "sql_dialect": "duckdb",
+    "linker_uid": "19btzb72",
+    "em_convergence": 0.0001,
+    "max_iterations": 25,
+    "bayes_factor_column_prefix": "bf_",
+    "term_frequency_adjustment_column_prefix": "tf_",
+    "comparison_vector_value_column_prefix": "gamma_",
+    "unique_id_column_name": "unique_id",
+    "source_dataset_column_name": "source_dataset",
+    "blocking_rules_to_generate_predictions": [
+        {
+            "blocking_rule": "(l.\"nombre_clean\" = r.\"nombre_clean\") AND (l.\"ap1_clean\" = r.\"ap1_clean\")",
+            "sql_dialect": "duckdb"
+        },
+        {
+            "blocking_rule": "(l.\"ap1_clean\" = r.\"ap1_clean\") AND (l.\"ap2_clean\" = r.\"ap2_clean\")",
+            "sql_dialect": "duckdb"
+        },
+        {
+            "blocking_rule": "(SUBSTRING(l.nombre_clean, 1, 1) = SUBSTRING(r.nombre_clean, 1, 1)) AND (l.\"ap1_clean\" = r.\"ap1_clean\") AND (l.\"ap2_clean\" = r.\"ap2_clean\")",
+            "sql_dialect": "duckdb"
+        },
+        {
+            "blocking_rule": "(l.\"ap1_dm\" = r.\"ap1_dm\") AND (l.\"ap2_dm\" = r.\"ap2_dm\")",
+            "sql_dialect": "duckdb"
+        },
+        {
+            "blocking_rule": "(l.\"nombre_dm\" = r.\"nombre_dm\") AND (l.\"ap1_dm\" = r.\"ap1_dm\")",
+            "sql_dialect": "duckdb"
+        },
+        {
+            "blocking_rule": "(SUBSTRING(l.nombre_clean, 1, 1) = SUBSTRING(r.nombre_clean, 1, 1)) AND (l.\"ap1_dm\" = r.\"ap1_dm\") AND (l.\"ap2_dm\" = r.\"ap2_dm\")",
+            "sql_dialect": "duckdb"
+        }
+    ],
+    "comparisons": [
+        {
+            "output_column_name": "nombre_clean",
+            "comparison_levels": [
+                {
+                    "sql_condition": "\"nombre_clean_l\" IS NULL OR \"nombre_clean_r\" IS NULL",
+                    "label_for_charts": "nombre_clean is NULL",
+                    "fix_m_probability": false,
+                    "fix_u_probability": false,
+                    "is_null_level": true
+                },
+                {
+                    "sql_condition": "\"nombre_clean_l\" = \"nombre_clean_r\"",
+                    "label_for_charts": "Exact match on nombre_clean",
+                    "m_probability": 0.9163221349189713,
+                    "u_probability": 0.00015841518117694142,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false,
+                    "tf_adjustment_column": "nombre_clean",
+                    "tf_adjustment_weight": 1.0
+                },
+                {
+                    "sql_condition": "jaro_winkler_similarity(\"nombre_clean_l\", \"nombre_clean_r\") >= 0.92",
+                    "label_for_charts": "Jaro-Winkler distance of nombre_clean >= 0.92",
+                    "m_probability": 0.02420590160238074,
+                    "u_probability": 0.0003247048011843156,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                },
+                {
+                    "sql_condition": "jaro_winkler_similarity(\"nombre_clean_l\", \"nombre_clean_r\") >= 0.88",
+                    "label_for_charts": "Jaro-Winkler distance of nombre_clean >= 0.88",
+                    "m_probability": 0.02094678487190169,
+                    "u_probability": 0.0013055356378573375,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                },
+                {
+                    "sql_condition": "array_length(list_intersect(\"nombre_dmeta_l\", \"nombre_dmeta_r\")) >= 1",
+                    "label_for_charts": "Array intersection size >= 1",
+                    "m_probability": 0.009157532168590745,
+                    "u_probability": 0.00022974833293497936,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                },
+                {
+                    "sql_condition": "jaro_winkler_similarity(\"nombre_clean_l\", \"nombre_clean_r\") >= 0.7",
+                    "label_for_charts": "Jaro-Winkler distance of nombre_clean >= 0.7",
+                    "m_probability": 0.028305312799890858,
+                    "u_probability": 0.018997083678419034,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                },
+                {
+                    "sql_condition": "ELSE",
+                    "label_for_charts": "All other comparisons",
+                    "m_probability": 0.0010623336382648172,
+                    "u_probability": 0.9789845123684274,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                }
+            ],
+            "comparison_description": "NameComparison"
+        },
+        {
+            "output_column_name": "ap1_clean",
+            "comparison_levels": [
+                {
+                    "sql_condition": "\"ap1_clean_l\" IS NULL OR \"ap1_clean_r\" IS NULL",
+                    "label_for_charts": "ap1_clean is NULL",
+                    "fix_m_probability": false,
+                    "fix_u_probability": false,
+                    "is_null_level": true
+                },
+                {
+                    "sql_condition": "\"ap1_clean_l\" = \"ap1_clean_r\"",
+                    "label_for_charts": "Exact match on ap1_clean",
+                    "m_probability": 0.9574244638961823,
+                    "u_probability": 0.0015056699963238794,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false,
+                    "tf_adjustment_column": "ap1_clean",
+                    "tf_adjustment_weight": 1.0
+                },
+                {
+                    "sql_condition": "jaro_winkler_similarity(\"ap1_clean_l\", \"ap1_clean_r\") >= 0.92",
+                    "label_for_charts": "Jaro-Winkler distance of ap1_clean >= 0.92",
+                    "m_probability": 0.02378400768091058,
+                    "u_probability": 0.0008702795904391005,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                },
+                {
+                    "sql_condition": "jaro_winkler_similarity(\"ap1_clean_l\", \"ap1_clean_r\") >= 0.88",
+                    "label_for_charts": "Jaro-Winkler distance of ap1_clean >= 0.88",
+                    "m_probability": 0.010047310747656536,
+                    "u_probability": 0.0007730116758818491,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                },
+                {
+                    "sql_condition": "array_length(list_intersect(\"ap1_dmeta_l\", \"ap1_dmeta_r\")) >= 1",
+                    "label_for_charts": "Array intersection size >= 1",
+                    "m_probability": 0.00735903690832932,
+                    "u_probability": 0.0011567184371448671,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                },
+                {
+                    "sql_condition": "jaro_winkler_similarity(\"ap1_clean_l\", \"ap1_clean_r\") >= 0.7",
+                    "label_for_charts": "Jaro-Winkler distance of ap1_clean >= 0.7",
+                    "m_probability": 1.233242226521522e-09,
+                    "u_probability": 0.020953888010808167,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                },
+                {
+                    "sql_condition": "ELSE",
+                    "label_for_charts": "All other comparisons",
+                    "m_probability": 0.0013851795336792046,
+                    "u_probability": 0.9747404322894021,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                }
+            ],
+            "comparison_description": "NameComparison"
+        },
+        {
+            "output_column_name": "ap2_clean",
+            "comparison_levels": [
+                {
+                    "sql_condition": "\"ap2_clean_l\" IS NULL OR \"ap2_clean_r\" IS NULL",
+                    "label_for_charts": "ap2_clean is NULL",
+                    "fix_m_probability": false,
+                    "fix_u_probability": false,
+                    "is_null_level": true
+                },
+                {
+                    "sql_condition": "\"ap2_clean_l\" = \"ap2_clean_r\"",
+                    "label_for_charts": "Exact match on ap2_clean",
+                    "m_probability": 0.9404403060570451,
+                    "u_probability": 0.001747733940123364,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false,
+                    "tf_adjustment_column": "ap2_clean",
+                    "tf_adjustment_weight": 1.0
+                },
+                {
+                    "sql_condition": "jaro_winkler_similarity(\"ap2_clean_l\", \"ap2_clean_r\") >= 0.92",
+                    "label_for_charts": "Jaro-Winkler distance of ap2_clean >= 0.92",
+                    "m_probability": 0.015464169687306524,
+                    "u_probability": 0.0008577647811042576,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                },
+                {
+                    "sql_condition": "jaro_winkler_similarity(\"ap2_clean_l\", \"ap2_clean_r\") >= 0.88",
+                    "label_for_charts": "Jaro-Winkler distance of ap2_clean >= 0.88",
+                    "m_probability": 0.008664975403523623,
+                    "u_probability": 0.0007597412366481119,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                },
+                {
+                    "sql_condition": "array_length(list_intersect(\"ap2_dmeta_l\", \"ap2_dmeta_r\")) >= 1",
+                    "label_for_charts": "Array intersection size >= 1",
+                    "m_probability": 0.004145068411953548,
+                    "u_probability": 0.00121977019708139,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                },
+                {
+                    "sql_condition": "jaro_winkler_similarity(\"ap2_clean_l\", \"ap2_clean_r\") >= 0.7",
+                    "label_for_charts": "Jaro-Winkler distance of ap2_clean >= 0.7",
+                    "m_probability": 0.0045245523602133065,
+                    "u_probability": 0.020230931247179177,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                },
+                {
+                    "sql_condition": "ELSE",
+                    "label_for_charts": "All other comparisons",
+                    "m_probability": 0.026760928079957967,
+                    "u_probability": 0.9751840585978637,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                }
+            ],
+            "comparison_description": "NameComparison"
+        },
+        {
+            "output_column_name": "sexo_clean",
+            "comparison_levels": [
+                {
+                    "sql_condition": "\"sexo_clean_l\" IS NULL OR \"sexo_clean_r\" IS NULL",
+                    "label_for_charts": "sexo_clean is NULL",
+                    "fix_m_probability": false,
+                    "fix_u_probability": false,
+                    "is_null_level": true
+                },
+                {
+                    "sql_condition": "\"sexo_clean_l\" = \"sexo_clean_r\"",
+                    "label_for_charts": "Exact match on sexo_clean",
+                    "m_probability": 0.9988331733679796,
+                    "u_probability": 0.49996042606455,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                },
+                {
+                    "sql_condition": "ELSE",
+                    "label_for_charts": "All other comparisons",
+                    "m_probability": 0.0011668266320203893,
+                    "u_probability": 0.5000395739354501,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                }
+            ],
+            "comparison_description": "ExactMatch"
+        },
+        {
+            "output_column_name": "nac_clean",
+            "comparison_levels": [
+                {
+                    "sql_condition": "\"nac_clean_l\" IS NULL OR \"nac_clean_r\" IS NULL",
+                    "label_for_charts": "nac_clean is NULL",
+                    "fix_m_probability": false,
+                    "fix_u_probability": false,
+                    "is_null_level": true
+                },
+                {
+                    "sql_condition": "\"nac_clean_l\" = \"nac_clean_r\"",
+                    "label_for_charts": "Exact match on nac_clean",
+                    "m_probability": 1.0,
+                    "u_probability": 0.6741304899720741,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false,
+                    "tf_adjustment_column": "nac_clean",
+                    "tf_adjustment_weight": 1.0
+                },
+                {
+                    "sql_condition": "ELSE",
+                    "label_for_charts": "All other comparisons",
+                    "m_probability": 5.493660817470428e-19,
+                    "u_probability": 0.32586951002792586,
+                    "fix_m_probability": false,
+                    "fix_u_probability": false
+                }
+            ],
+            "comparison_description": "ExactMatch"
+        }
+    ]
+}

@@ -208,5 +208,5 @@ Blocking decisions belong in the quality statement, not in a comment in the code
 - which failure modes the rule set is known not to cover.
 
 With prepared data, a linkage approach and a blocking strategy,
-chapter 2.6 assembles all of it in a real library —
+[chapter 2.6](implementing-in-splink.md) assembles all of it in a real library —
 and adds the comparison functions that finally let partial agreement count.

@@ -39,3 +39,16 @@ parts:
       - file: content/02_producing/blocking.md
         sections:
           - file: content/02_producing/nb05-blocking-strategies.ipynb
+      - file: content/02_producing/implementing-in-splink.md
+        sections:
+          - file: content/02_producing/nb06-splink-settings-and-blocking.ipynb
+          - file: content/02_producing/nb07-comparisons-and-training.ipynb
+      - file: content/02_producing/thresholds-and-clustering.md
+        sections:
+          - file: content/02_producing/nb08-thresholds-and-clustering.ipynb
+      - file: content/02_producing/evaluation.md
+        sections:
+          - file: content/02_producing/nb09-evaluation.ipynb
+      - file: content/02_producing/end-to-end-example.md
+        sections:
+          - file: content/02_producing/nb10-end-to-end.ipynb

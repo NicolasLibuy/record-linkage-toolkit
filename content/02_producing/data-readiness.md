@@ -162,7 +162,7 @@ You can see the effect directly. In the bundled data, cleaning that only fixes
 case and whitespace merges a single surname spelling. Adding accent and
 punctuation removal merges **401**. Those 401 are matches that would otherwise
 have been missed, and false matches that have just become possible. Which of
-those two effects dominates is an empirical question, and chapter 2.8 shows how
+those two effects dominates is an empirical question, and [chapter 2.8](evaluation.md) shows how
 to answer it by trying both and measuring.
 
 The practical advice: standardise in explicit, separable steps rather than one
