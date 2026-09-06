@@ -29,9 +29,9 @@ No code. This section is the case for doing linkage at all; method detail belong
 
 | Page | Status | Scope | Written from |
 |:--|:--|:--|:--|
-| `demand-for-linked-data.md` | ⬜ | Demand for integrated data; SDG monitoring and disaggregation; the Data for Now rationale; what linkage makes possible that one source cannot | Lecture 1; Concept Note |
-| `limits-of-single-source.md` | ⬜ | Coverage, timeliness and cost limits of survey-only production; ad-hoc linkage vs. permanent linkage systems; population registers; established national examples | Lecture 1 |
-| `linkage-as-a-solution.md` | ⬜ | Deterministic vs. probabilistic at a glance and when each applies; what linkage cannot fix; privacy, confidentiality, consent and public acceptability as design constraints | Lecture 1 |
+| `demand-for-linked-data.md` | ✅ | Demand for integrated data; SDG monitoring and disaggregation; the Data for Now rationale; what linkage makes possible that one source cannot | Lecture 1; Concept Note |
+| `limits-of-single-source.md` | ✅ | Coverage, timeliness and cost limits of survey-only production; ad-hoc linkage vs. permanent linkage systems; population registers; established national examples | Lecture 1 |
+| `linkage-as-a-solution.md` | ✅ | Deterministic vs. probabilistic at a glance and when each applies; what linkage cannot fix; privacy, confidentiality, consent and public acceptability as design constraints | Lecture 1 |
 
 ## Section 2 — Producing linked data
 

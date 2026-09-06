@@ -14,3 +14,10 @@ parts:
       - file: content/00_front/contributors.md
       - file: data/README.md
         title: The synthetic sample data
+
+  - caption: 1. Why record linkage matters
+    numbered: true
+    chapters:
+      - file: content/01_why/demand-for-linked-data.md
+      - file: content/01_why/limits-of-single-source.md
+      - file: content/01_why/linkage-as-a-solution.md

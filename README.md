@@ -20,7 +20,7 @@ dataset to run it on.
 
 Between May and August 2026 the United Nations Statistics Division delivered a
 13-session training on deterministic and probabilistic record linkage under the
-[Data for Now](https://unstats.un.org/wiki/display/dataforNow) initiative, to 26
+[Data for Now](https://unstats.un.org/capacity-development/data-for-now) initiative, to 26
 participants from eight countries: Bhutan, the Dominican Republic, Jamaica,
 Kenya, Namibia, Rwanda, Somalia and the State of Palestine. It covered Python
 data management, anonymisation, deterministic linkage, the Fellegi–Sunter
