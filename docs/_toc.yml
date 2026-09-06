@@ -67,3 +67,15 @@ parts:
     chapters:
       - file: content/04_production/adoption-challenges.md
       - file: content/04_production/enabling-environment.md
+
+  - caption: 6. Reference materials
+    numbered: true
+    chapters:
+      - file: content/06_reference/software.md
+      - file: content/06_reference/key-readings.md
+      - file: content/06_reference/related-toolkits.md
+      - file: content/06_reference/open-source-courses.md
+
+  - caption: 7. FAQ
+    chapters:
+      - file: content/07_faq/faq.md

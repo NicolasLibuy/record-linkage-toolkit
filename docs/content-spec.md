@@ -79,16 +79,16 @@ A living section, open to offices beyond the original cohort.
 
 | Page | Status | Scope |
 |:--|:--|:--|
-| `software.md` | ⬜ | By platform. Python: Splink, recordlinkage, DuckDB, phonetics. PySpark: the ONS diagnostic and EM functions. Other: RELAIS, fastLink |
-| `key-readings.md` | ⬜ | Fellegi & Sunter (1969); Linacre et al. (2022); Harron et al. (2016); Herzog, Scheuren & Winkler; the ONS working paper. Backed by `docs/bibliography.bib` |
-| `related-toolkits.md` | ⬜ | SAE4SDG; ONS *Developing standard tools for data linkage* (2021); UN Women/UNECA/UNSD *Data Linking Toolkit* (2025); the World Bank alternative-data book |
-| `open-source-courses.md` | ⬜ | Splink's own tutorial and topic guides; Robin Linacre's probabilistic linkage training; UN SIAP e-learning; Python foundations |
+| `software.md` | ✅ | By platform. Python: Splink, recordlinkage, DuckDB, phonetics. PySpark: the ONS diagnostic and EM functions. Other: RELAIS, fastLink |
+| `key-readings.md` | ✅ | Fellegi & Sunter (1969); Linacre et al. (2022); Harron et al. (2016); Herzog, Scheuren & Winkler; the ONS working paper. Backed by `docs/bibliography.bib` |
+| `related-toolkits.md` | ✅ | SAE4SDG; ONS *Developing standard tools for data linkage* (2021); UN Women/UNECA/UNSD *Data Linking Toolkit* (2025); the World Bank alternative-data book |
+| `open-source-courses.md` | ✅ | Splink's own tutorial and topic guides; Robin Linacre's probabilistic linkage training; UN SIAP e-learning; Python foundations |
 
 ## Section 7 — FAQ
 
 | Page | Status | Scope |
 |:--|:--|:--|
-| `faq.md` | ⬜ | A running list, grouped: legal and privacy; data preparation; deterministic vs. probabilistic; Splink specifics and error messages; quality and thresholds; scale and infrastructure |
+| `faq.md` | ✅ | A running list, grouped: legal and privacy; data preparation; deterministic vs. probabilistic; Splink specifics and error messages; quality and thresholds; scale and infrastructure |
 
 Seeded with API behaviour verified against `splink==4.0.0`:
 
