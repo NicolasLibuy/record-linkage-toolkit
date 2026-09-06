@@ -62,8 +62,8 @@ outline; a notebook accompanies every page that has code.
 
 | Page | Status | Scope | Written from |
 |:--|:--|:--|:--|
-| `adoption-challenges.md` | ⬜ | The non-technical barriers that stop pilots: no legal basis, no data-sharing agreement, scarce Python capacity, no owner for the pipeline, no re-run schedule | Guest sessions; country templates; Output 9 findings |
-| `enabling-environment.md` | ⬜ | Legal frameworks and authorisations; data-sharing agreements; governance and disclosure control; staffing and skills; infrastructure; model versioning, re-running and drift | Chile MDSF/RIS guest session; the Splink/UK MoJ adoption story; verified NSO reports |
+| `adoption-challenges.md` | ✅ | The non-technical barriers that stop pilots: no legal basis, no data-sharing agreement, scarce Python capacity, no owner for the pipeline, no re-run schedule | Guest sessions; country templates; Output 9 findings |
+| `enabling-environment.md` | ✅ | Legal frameworks and authorisations; data-sharing agreements; governance and disclosure control; staffing and skills; infrastructure; model versioning, re-running and drift | Chile MDSF/RIS guest session; the Splink/UK MoJ adoption story; verified NSO reports |
 
 ## Section 5 — Country practices
 

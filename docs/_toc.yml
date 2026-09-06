@@ -61,3 +61,9 @@ parts:
         sections:
           - file: content/03_quality/nb11-charts-and-exports.ipynb
       - file: content/03_quality/quality-metric-reference.md
+
+  - caption: 4. From pilot to production
+    numbered: true
+    chapters:
+      - file: content/04_production/adoption-challenges.md
+      - file: content/04_production/enabling-environment.md
