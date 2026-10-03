@@ -91,10 +91,13 @@ individual than any single source held. That is exactly what data protection
 regimes are designed to be careful about, and the increased richness genuinely
 does increase the risk of re-identification.
 
-Public opinion research in several countries has found consistent patterns:
-people are largely unaware of how their data is already used, are unclear about
-what anonymisation means in practice, and judge acceptability mainly by whether
-there is a demonstrable public benefit. That last finding is the actionable one.
+More than a decade of public dialogue in the United Kingdom, reviewed by
+Administrative Data Research UK, points the same way.[^1] People start with very
+little awareness of how administrative data is used for research, and their
+support is conditional on three things together: a demonstrable public interest,
+protection against re-identification, and trust in, and transparency from,
+whoever holds the data. Of the three, public interest is the most prominent
+driver of support. That is the actionable finding.
 Being able to state clearly what a linkage is for, and who benefits, is not
 public relations. It is a precondition.
 
@@ -107,8 +110,8 @@ mandate, with approvals from each data controller.
 
 Where consent *is* feasible — linking a survey, cohort or trial to
 administrative records — it introduces a different problem. People who consent
-differ systematically from people who do not, typically by age, education and
-economic circumstances, with the most disadvantaged least likely to consent.[^1]
+differ systematically from people who do not: people of lower socio-economic
+status and members of ethno-linguistic minorities are less likely to consent.[^2]
 A consent-based linkage can therefore produce a linked subset that is
 unrepresentative in precisely the dimension the analysis cares about. This is a
 selection bias to measure and report, not a detail.
@@ -162,7 +165,13 @@ know how you will make them true.
 If most of that holds, Section 2 takes it from a use case to a linked dataset, one step at a time, with code that
 runs at every step.
 
-[^1]: Mostafa, T. and Wiggins, R. (2015). *How consistent is respondent
-behaviour to allow linkage to health administrative data over time?* Centre for
-Longitudinal Studies. The finding is drawn from consent to health data linkage in
-the UK Millennium Cohort Study.
+[^1]: ADR UK (2020). *Trust, Security and Public Interest: Striking the Balance.
+A review of previous literature on public attitudes towards the sharing and
+linking of administrative data for research.* Administrative Data Research UK.
+[PDF](https://www.adruk.org/fileadmin/uploads/adruk/Trust_Security_and_Public_Interest-_Striking_the_Balance-_ADR_UK_2020.pdf)
+
+[^2]: Mostafa, T. and Wiggins, R. D. (2015). *How consistent is respondent
+behaviour to allow linkage to health administrative data over time?* CLS Working
+Paper 2015/03. London: Centre for Longitudinal Studies. The finding is drawn from
+consent to health data linkage in the UK Millennium Cohort Study.
+[PDF](https://cls.ucl.ac.uk/wp-content/uploads/2017/04/CLS-WP-20153-Linkage-to-health-administrative-data-Wiggins-Mostafa-May-2015.pdf)

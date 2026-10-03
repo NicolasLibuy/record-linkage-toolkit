@@ -59,11 +59,12 @@ Set the two side by side and the argument for linking is almost mechanical.
 | Cost of an additional variable | Usually impossible | High |
 | Cost of an additional year | Low | High |
 | Concept measured | The service's concept | Your concept |
-| Data quality in identifying fields | Variable | Generally better |
+| Identifying fields | Present but variable in quality | Often absent, or self-reported and unvalidated |
 | Attrition | Not applicable | A real problem |
 
 Linking a survey to administrative records adds long-term follow-up without
-re-contacting anyone, and avoids attrition. Linking administrative records to a
+re-contacting anyone, and avoids attrition for whatever the administrative
+records measure. Linking administrative records to a
 survey provides a validation sample against which to estimate how accurate the
 administrative measurement actually is. Linking two administrative sources
 extends coverage or measures how incomplete each one is. In each case the linked

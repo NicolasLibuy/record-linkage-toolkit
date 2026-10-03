@@ -35,8 +35,8 @@ detail can be linked to an administrative register to add variables that would
 have been expensive or unreliable to ask about, or to follow respondents over
 time without re-contacting them.
 
-**To answer new questions without new collection.** The most economically
-significant reason. A linked dataset built once can support many analyses that
+**To answer new questions without new collection.** Often the most
+economically significant reason. A linked dataset built once can support many analyses that
 would each otherwise have required a survey.
 
 ## Why this matters for the 2030 Agenda
