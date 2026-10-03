@@ -126,13 +126,24 @@ several variants:
 
 The last three are the treacherous cases. A partially populated identifier
 invites a linkage that quietly excludes the population you most needed to
-measure. Chile's situation is a good example of the mixed case: the country has
-a universal identity number, the RUN, and where it is present linkage is largely
-deterministic — but administrative systems assign provisional identifiers to
-people whose registration is still in progress, and those provisional numbers
-cannot be used to follow a person between systems. That is what creates the need
-for probabilistic linkage in an otherwise well-identified country, and it is the
-situation the synthetic data in this toolkit reproduces.
+measure. Chile's situation is a good example of the mixed case. The country has a
+universal identity number, the RUN, and where it is present linkage is largely
+deterministic. But obtaining a valid RUN can be a slow process, and in the
+meantime administrative systems track people under identifiers of their own: the
+public health insurer Fonasa assigns a provisional identification number (NIP),
+and the social security records held by Suseso a contribution number (NIC). In
+the source registers these cover about 4% of Fonasa records and 2% of Suseso
+records, and they cannot be used to follow a person from one system to another.
+Linking those records means falling back on names, sex and nationality, which is
+what creates the need for probabilistic linkage in an otherwise well-identified
+country.
+
+The synthetic data in this toolkit were built for that problem, to support the
+development of the population register that Chile's national statistics office
+(INE) is building from administrative records. They reproduce the frequency and
+error structure of the identifying variables in Fonasa and Suseso, and they carry
+no identifier at all: every link has to be made from the names and other
+characteristics, as it would be for the records held under a NIP or a NIC.
 
 The [next chapter](linkage-as-a-solution.md) sets out what record linkage
 actually is, the two families of methods, and the constraints — legal, ethical
