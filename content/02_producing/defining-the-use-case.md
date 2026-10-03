@@ -154,7 +154,8 @@ than the ones in this toolkit, and treat these as a demanding case rather than a
 typical one.
 
 **The error preference is balanced.** That single choice is what makes it
-legitimate, later, to select a threshold by maximising the F1 score. Under a
+legitimate, later, to consider selecting a threshold by maximising the F1 score,
+though chapters 2.7 and 2.8 show why even then the result has to be checked. Under a
 different preference the same model would be operated at a different threshold,
 and the linked dataset would be a different dataset. The model does not change;
 the specification decides how it is used.

@@ -129,7 +129,8 @@ This is the part that is usually asserted rather than measured. The bundled data
 is synthetic, so we know that exactly 4,500 people appear in both registers, and
 we can score the method.
 
-Requiring given name, first surname, sex and nationality:
+Requiring given name, first surname, sex and nationality (second surname included
+when present):
 
 | | Result |
 |:--|--:|
@@ -174,8 +175,8 @@ long before anyone computes a match weight.
 excellent first pass: fast, defensible, and its precision means anything it finds
 can be trusted. Many offices run it as stage one and apply something more
 tolerant to what remains. What it cannot do is deliver a complete linkage, and
-publishing a match rate from it without saying so would overstate the overlap
-between two registers by a factor of four.
+publishing a match rate from it without saying so would understate the overlap
+between two registers by a factor of about four.
 
 ## When you cannot exchange identifiers at all
 
@@ -190,8 +191,8 @@ approaches exist beyond the scope of this toolkit, both worth knowing by name:
 - **Trusted third-party models**, where a designated body receives identifiers
   from both sides, performs the linkage, and returns only linked pseudonyms.
 
-Both are referenced under Reference Materials.
-This toolkit assumes the common case: an office that can hold identifying data
+PPRL is described further under Reference Materials, and the trusted third party
+in chapter 1.3. This toolkit assumes the common case: an office that can hold identifying data
 from its sources under an appropriate legal basis, and wants to link it well.
 
 [Chapter 2.4](linkage-approaches.md) takes up the problem this chapter exposed —

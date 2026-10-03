@@ -160,10 +160,12 @@ which you have to measure, not assume.[^1]
 
 You can see the effect directly. In the bundled data, cleaning that only fixes
 case and whitespace merges a single surname spelling. Adding accent and
-punctuation removal merges **401**. Those 401 are matches that would otherwise
-have been missed, and false matches that have just become possible. Which of
-those two effects dominates is an empirical question, and [chapter 2.8](evaluation.md) shows how
-to answer it by trying both and measuring.
+punctuation removal merges **401** distinct spellings of the first surname into others. Each of those
+merges can recover true matches that would otherwise have been missed, and each
+can also make a false match possible. Which of the two effects dominates is an
+empirical question: run the linkage with each level of standardisation and
+compare precision and recall, using the evaluation tools of
+[chapter 2.8](evaluation.md).
 
 The practical advice: standardise in explicit, separable steps rather than one
 opaque function, so you can vary the level and compare. And apply exactly the
