@@ -1,7 +1,7 @@
 # Implementing the model in Splink
 
 Chapter 2.4 built a Fellegi–Sunter model by hand and reached an uncomfortable
-conclusion: it barely beat a hand-written deterministic rule. The reason was not
+conclusion: it did not beat a hand-written deterministic rule. The reason was not
 the framework but the comparison — every method so far asked only whether two
 values were *identical*.
 
@@ -220,14 +220,16 @@ before:
 |:--|--:|--:|
 | Exact match on hashed identifiers (2.3) | 1.0000 | 0.2400 |
 | Best deterministic rule (2.4) | 0.9813 | 0.2567 |
-| Fellegi–Sunter, exact comparison, by hand (2.4) | 1.0000 | 0.2678 |
-| **Splink model, threshold 0.95** | **1.0000** | **0.2740** |
+| Fellegi–Sunter, exact comparison, by hand (2.4), best F1 | 0.8356 | 0.2678 |
+| Fellegi–Sunter, exact comparison, by hand (2.4), perfect precision | 1.0000 | 0.2418 |
+| **Splink model, threshold 0.95** | **1.0000** | **0.2747** |
 | **Splink model, threshold 0.50** | **0.9842** | **0.3049** |
 
 Be precise about what that shows. At *identical* precision of 1.0000, fuzzy
-comparison buys about 0.7 percentage points of recall over the hand-built exact
-model. Accepting a 1.6-point precision cost buys about 3.7 points. Both are real
-gains on pairs no exact method could see. Neither is a transformation.
+comparison buys about 3.3 percentage points of recall over the hand-built exact
+model (0.2418 to 0.2747). At a precision around 0.98 to 0.99, it buys about 5.5
+points (0.2502 for the exact model at 0.9929, against 0.3049 at 0.9842). Both are
+real gains on pairs no exact method could see. Neither is a transformation.
 
 The honest summary of chapters 2.3 to 2.6 is that **method improvements moved
 recall from 0.24 to 0.30 on this data, and the remaining constraint is not the

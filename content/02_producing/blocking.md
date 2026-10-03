@@ -8,7 +8,7 @@ smaller fraction of what you are searching through.
 
 | Scenario | Comparisons | Hours at 100,000 per second |
 |:--|--:|--:|
-| The registers in this toolkit | 810 million | 2.3 |
+| The registers in this toolkit | 810 million | 2.2 |
 | Two municipal registers | 30 billion | 83 |
 | A national register pair | 15 trillion | 41,667 |
 | A census against an administrative source | 216 trillion | 600,000 |
@@ -137,9 +137,11 @@ Two consequences follow.
 
 **When a model reports recall, read it against this ceiling, not against 1.0.**
 The shortfall below the ceiling is the model's responsibility; everything above
-it is blocking's. Reporting a recall figure without stating the blocking ceiling
-is one of the commonest ways a linkage quality statement misleads its reader —
-and it usually flatters the model.
+it is blocking's. A recall computed only over the candidate pairs ignores
+everything blocking discarded and flatters the pipeline; one computed over all
+true matches mixes the two sources of loss. Stating the ceiling is what lets the
+reader separate them, and leaving it out is one of the commonest ways a linkage
+quality statement misleads.
 
 **If the ceiling is too low, the answer is not a better model.** It is another
 blocking rule that catches the kind of record the current set loses.

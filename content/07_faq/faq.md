@@ -121,10 +121,11 @@ probabilistic model on the residue.
 Keep the deterministic rule even if you end up probabilistic: it is the benchmark
 that tells you whether the model is earning its complexity.
 
-### We built a Fellegi–Sunter model and it barely beat our deterministic rule. Is it broken?
+### We built a Fellegi–Sunter model and it did not beat our deterministic rule. Is it broken?
 
-Probably not. This toolkit's own model did exactly that — recall 0.2678 against
-0.2567 — and the reason is instructive.
+Probably not. This toolkit's own model did exactly that: its best F1 was 0.406
+against 0.4069 for the stepwise rule, and at comparable precision its recall was
+0.2502 against 0.2567. The reason is instructive.
 
 The scoring framework alone does not move the ceiling if you are still comparing
 values for **exact equality**. What moves it is comparing values that are

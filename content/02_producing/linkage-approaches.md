@@ -72,9 +72,9 @@ the weakest stage for an analysis that needs high precision — without re-runni
 anything.
 
 **Rules are not simply nested.** The strict rule is contained in both of the
-others, as you would expect. But the N-1 rule and the match key are not nested in
-each other: the match key found 91 pairs the N-1 rule missed, and the N-1 rule
-found 23 the match key missed. They tolerate different errors. That is precisely
+others, as you would expect. But the N-1 rule with its clause and the match key are
+not nested in each other: the match key found 91 pairs the N-1 rule missed, and
+the N-1 rule found 23 the match key missed. They tolerate different errors. That is precisely
 why running several rules and combining them is worth doing.
 
 ### Where deterministic rules stop
@@ -162,12 +162,37 @@ hand in Part 1 — except that here its strength is measured rather than guessed
 
 ### The honest result
 
-Scoring all 4,500 true matches and the sampled non-matches, the best threshold
-gives precision 1.0000 and recall 0.2678.
+The notebook first scores the 4,500 true matches and the 200,000 sampled
+non-matches, scaling the sample up to the full 810 million pairs. On that
+estimate, a threshold of 0 bits gives precision 1.0000 and recall 0.2678, which
+would comfortably beat every deterministic rule.
 
-The best deterministic rule gave precision 0.9813 and recall 0.2567.
+It is wrong, and the way it is wrong is worth knowing. From 0 bits upwards none
+of the sampled non-matches crosses the threshold, so the estimate reports zero
+false matches. Scoring the full comparison exactly shows **237** false matches
+among the 1,442 pairs proposed at 0 bits:
 
-**The Fellegi–Sunter model, correctly built, barely beat a hand-written rule.**
+| Threshold | Pairs | False matches | Precision | Recall |
+|:--|--:|--:|--:|--:|
+| 0 bits | 1,442 | 237 | 0.8356 | 0.2678 |
+| 3 bits | 1,134 | 8 | 0.9929 | 0.2502 |
+| 5 bits | 1,088 | 0 | 1.0000 | 0.2418 |
+
+Two hundred and thirty-seven false matches in 810 million pairs is a rate of
+about three in ten million, and a random sample of 200,000 pairs would be
+expected to contain fewer than one of them. **A precision estimated from a modest
+random sample of non-matches cannot see a low false-match rate**, and at the
+strict end of the threshold range a low false-match rate is the only kind there
+is. On real data, without a ground truth to count against, this is why chapter
+2.8 builds its clerical sample stratified by score, over-sampling the uncertain
+band, rather than drawing pairs at random.
+
+Counted exactly, the comparison with the rules is clear. The best deterministic
+rule, the stepwise design, gave precision 0.9813, recall 0.2567 and F1 0.4069.
+The model's best F1 is 0.406. At comparable precision it reaches recall 0.2502,
+and at perfect precision 0.2418.
+
+**The Fellegi–Sunter model, correctly built, did not beat a hand-written rule.**
 
 That result deserves an explanation rather than an excuse, because it is the most
 useful thing in this chapter.
