@@ -24,7 +24,8 @@ Sampling design
 A stratified sample with a known number of true cross-register matches:
 
   * 4,500 person identifiers that appear in BOTH registers -> 4,500 true matches
-  * fillers drawn only from identifiers that appear in NEITHER intersection,
+  * fillers drawn only from identifiers outside the intersection (present in
+    just one of the two registers),
     so the number of true matches in the extract is exactly 4,500
 
 giving 30,000 Fonasa records and 27,000 Suseso records. The seed is fixed, so

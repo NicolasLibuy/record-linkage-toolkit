@@ -80,8 +80,8 @@ python scripts/build_sample_dataset.py --source-dir /path/to/full/csvs
 ```
 
 The sample is stratified: 4,500 person identifiers present in both registers,
-plus fillers drawn only from identifiers present in neither, so the number of
-true matches is exactly 4,500 and not one more.
+plus fillers drawn only from identifiers that appear in just one of the two
+registers, so the number of true matches is exactly 4,500 and not one more.
 
 ## Licence
 

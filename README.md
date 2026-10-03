@@ -2,7 +2,7 @@
 
 **A toolkit for the production of official statistics**
 
-Most national statistical offices hold two or more administrative or statistical
+Many national statistical offices hold two or more administrative or statistical
 sources that describe the same people, and no reliable identifier that connects
 them. This toolkit is about closing that gap: how to decide whether your sources
 can be linked, how to link them, how to tell whether the result is good enough
@@ -34,6 +34,38 @@ resource: not the course, but the guidance the course was built on, made
 standalone so that any office can work through it without having attended
 anything.
 
+## What this toolkit adds
+
+The *Data Linking Toolkit* published by UN Women, UNECA and UNSD in 2025 already
+surveys five linkage methodologies and pairs each with a case study and R-based
+guidance. This toolkit is deliberately narrower and deeper, and is meant to
+complement that resource rather than duplicate it. What it adds:
+
+- **Depth on one family of methods rather than a survey of five.**
+  Deterministic and probabilistic (Fellegi–Sunter) linkage are worked through in
+  full, from data preparation to the clustering of predictions, at the level of
+  detail an office needs to *implement* them rather than to appraise them.
+- **A complete, runnable implementation.** Open-source Python and Splink code
+  sits in each chapter where it applies, so the guidance can be executed,
+  adapted and re-run, not only read.
+- **The production end of the pipeline.** Blocking at scale, parameter
+  estimation, threshold selection, clustering, linkage error and bias, quality
+  evaluation and reproducible documentation are the steps that decide whether a
+  pilot becomes a statistical output, and each is covered explicitly.
+- **Learning without data access.** A synthetic dataset with a known answer
+  ships with the toolkit, so the whole pipeline, including its error rates, can
+  be run and evaluated before touching national data.
+- **Country practices drawn from implementation.** The country cases it
+  publishes are those where linkage is actually in production or in use for
+  official statistics, contributed by the offices that built them.
+- **Alignment with GSBPM v5.2**, so the guidance can be located inside the
+  process framework an office already uses.
+
+In short: if the question is *which* kind of linkage suits a problem, start with
+the Data Linking Toolkit; if the decision is made and individual record linkage
+has to be implemented, this toolkit takes it from there. The relationship is set
+out in full under [Related toolkits](content/06_reference/related-toolkits.md).
+
 ## What to expect
 
 By the end of this toolkit you should be able to:
@@ -59,9 +91,11 @@ about before applying any of it to your own records.
   implement them, not to survey the field. Pointers for going further are in
   Reference Materials.
 - **Not a survey of every linkage method.** Deterministic and probabilistic
-  (Fellegi–Sunter) linkage are covered in full. Machine-learning approaches,
-  privacy-preserving linkage protocols and census–survey alignment are named
-  where relevant but not developed here.
+  (Fellegi–Sunter) linkage are covered in full. Machine-learning approaches
+  and privacy-preserving linkage protocols are named where relevant but not
+  developed here. Other kinds of linkage, such as aligning a census with its
+  post-enumeration survey or linking people to service locations, are covered
+  by the companion *Data Linking Toolkit* (see below).
 - **Not legal advice.** Whether you may link two registers, and under what
   authority, is a question for your own legal framework. The toolkit says what
   usually has to be in place; it cannot tell you whether it is.
@@ -75,7 +109,8 @@ A few things worth knowing before you start.
 **It is Python- and Splink-centric, and that is a choice.** The implementation
 chapters use [Splink](https://moj-analytical-services.github.io/splink/), an
 open-source library that is free, runs at national scale, and is used in
-production by statistical and government agencies. Committing to one tool is
+production by government agencies, including the UK's Office for National
+Statistics (see [Splink's list of users](https://moj-analytical-services.github.io/splink/#use-cases)). Committing to one tool is
 what lets the toolkit show a complete working pipeline instead of a sketch. If
 your office cannot use Python, the *methods* still transfer, and alternative
 software is listed under Reference Materials.

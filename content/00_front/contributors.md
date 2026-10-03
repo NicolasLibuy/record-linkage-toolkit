@@ -8,7 +8,8 @@ This toolkit was prepared under the United Nations Statistics Division's
 **Nicolas Libuy** wrote the toolkit and led the training programme it draws on.
 
 The **United Nations Statistics Division** commissioned and coordinated the work
-and reviewed the toolkit's scope and structure.
+and reviewed the toolkit's scope and structure, through **Faryal Ahmed** and
+**Samrat Maskey**.
 
 ## Participating national statistical offices
 
@@ -27,11 +28,15 @@ shaped what the toolkit covers and how much detail each step needed:
 
 ## Guest contributions
 
-Practitioners from national institutions presented their own linkage systems
-during the programme, and those accounts inform Sections 4 and 5. Among them,
-Chile's **Ministerio de Desarrollo Social y Familia** presented the *Registro de
-Información Social*, a long-running operational example of administrative data
-integration in government.
+Practitioners from four national institutions presented their own linkage work
+during the programme:
+
+- **Instituto Nacional de Estadísticas (INE), Chile**
+- **Departamento Administrativo Nacional de Estadística (DANE), Colombia**
+- **Australian Bureau of Statistics (ABS)**
+- **Ministerio de Desarrollo Social y Familia, Chile**, on the *Registro de
+  Información Social*, a long-running operational example of administrative
+  data integration in government
 
 ## Data
 
