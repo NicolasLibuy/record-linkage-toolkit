@@ -178,13 +178,13 @@ check what EM produced without them.
 
 | Field | *m* by EM | *m* measured | *u* by sampling | *u* measured |
 |:--|--:|--:|--:|--:|
-| Given name | 0.9162 | 0.3232 | 0.000161 | 0.000149 |
-| First surname | 0.9576 | 0.4509 | 0.001468 | 0.001470 |
-| Second surname | 0.9407 | 0.4377 | 0.001614 | 0.001770 |
-| Sex | 0.9989 | 0.9162 | 0.500873 | 0.500436 |
-| Nationality | 1.0000 | 0.9944 | 0.675077 | 0.670525 |
+| Given name | 0.9163 | 0.3232 | 0.000158 | 0.000149 |
+| First surname | 0.9574 | 0.4509 | 0.001506 | 0.001470 |
+| Second surname | 0.9404 | 0.4377 | 0.001748 | 0.001770 |
+| Sex | 0.9988 | 0.9162 | 0.499960 | 0.500436 |
+| Nationality | 1.0000 | 0.9944 | 0.674130 | 0.670525 |
 
-**The *u* estimates are excellent** — every one within a few percent of the
+**The *u* estimates are excellent** — every one within about 6% of the
 measured value. Random sampling answers "how often do two different people agree
 on this?" directly, and little can go wrong.
 

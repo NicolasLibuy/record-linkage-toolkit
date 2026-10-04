@@ -35,7 +35,7 @@ rescue it. Look at this before you look at anything else.
 
 One line in that table deserves attention: the lowest band contains **214 genuine
 matches**. Those are pairs the model scored below one chance in a thousand and
-that are, nonetheless, the same person. No threshold recovers them, because the
+that are, nonetheless, the same person. No usable threshold recovers them, because the
 identifying fields genuinely disagree. They are part of the irreducible error,
 and they are why a linkage quality statement should describe what it cannot find
 as well as what it can.
@@ -53,7 +53,7 @@ Sweeping the threshold shows what each setting costs:
 | 0.95 | 1,236 | 1,236 | 0 | 1.0000 | 0.2747 |
 | 0.99 | 1,189 | 1,189 | 0 | 1.0000 | 0.2642 |
 
-Across the whole range the choice buys 213 extra true matches at the cost of 99
+Across the whole range the choice buys 286 extra true matches at the cost of 99
 false ones — the entire decision, in two numbers.
 
 **Which row you want is not a statistical question.** It is the decision recorded

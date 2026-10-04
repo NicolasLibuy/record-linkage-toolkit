@@ -36,9 +36,9 @@ That sequence does not change between projects. Everything else does.
 | Comparisons | Fuzzy name comparison with a phonetic level; term-frequency adjusted |
 | Estimation | λ from deterministic rules (recall = 0.5); *u* by random sampling; *m* by EM over 3 training rules |
 | Threshold | 0.9 match probability |
-| Result | **1,267 linked pairs**, 55,733 clusters, **0** clusters larger than two |
+| Result | **1,271 linked pairs**, 55,729 clusters, **0** clusters larger than two |
 | Precision | 0.9961 |
-| Recall | 0.2804 against all true matches; 0.67 against the blocking ceiling |
+| Recall | 0.2813 against all true matches; 0.67 against the blocking ceiling |
 | Blocking ceiling | 0.4182 |
 
 Note that this uses **four** blocking rules where chapter 2.6 used six. The
@@ -51,22 +51,25 @@ before committing is for.
 This notebook re-trains rather than loading the saved model, which makes it a
 useful test of something the earlier chapters only asserted.
 
-Running the same pipeline again produces figures that differ from chapter 2.7's
-in the third or fourth decimal place — and on some runs do not differ at all. The
-cause is single and specific: `estimate_u_using_random_sampling()` draws a fresh
-random sample each time, and nothing seeds it.
+The pipeline is the same as the one that produced the saved model, down to the
+two deterministic rules used to estimate λ, so the two runs differ in exactly one
+step. Even so, the results differ: at the 0.9 threshold this run accepts 1,271
+pairs with recall 0.2813, against 1,267 and 0.2804 in chapter 2.7, and on other
+runs the gap is smaller or absent. The cause is single and specific:
+`estimate_u_using_random_sampling()` draws a fresh random sample each time, and
+nothing seeds it.
 
 How much it matters depends on the sample size. Estimating the same *u* parameter
 three times at each of two sample sizes:
 
 | Sample size | Estimates of one *u* parameter | Spread |
 |:--|:--|--:|
-| 10,000 pairs | 0.000418, 0.000506, 0.000169 | 0.000337 |
-| 1,000,000 pairs | 0.000164, 0.000126, 0.000117 | 0.000047 |
+| 10,000 pairs | 0.000092, 0.000195, 0.000222 | 0.000130 |
+| 1,000,000 pairs | 0.000158, 0.000141, 0.000154 | 0.000017 |
 
-At the small size the estimate varies by a factor of three between runs. A
-hundred times more pairs tightens it by roughly an order of magnitude — but it
-still varies, and it never settles.
+At the small size the largest estimate is more than twice the smallest. A
+hundred times more pairs narrows the spread about sevenfold, but it still
+varies, and it never settles.
 
 Why, then, do precision and recall barely move? Because the model's **ranking**
 of pairs is robust to small parameter changes: a pair scoring far above the
@@ -112,7 +115,8 @@ best deterministic rule 0.26, because genuine matches agree exactly on a given
 name only a third of the time.
 
 **The scoring framework alone does not fix that.** Fellegi–Sunter with exact
-comparison reached 0.27 — barely better than a hand-written rule.
+comparison, counted exactly, did not beat a hand-written rule: at comparable
+precision it reached recall 0.25, against 0.26 for the stepwise rule.
 
 **Fuzzy comparison helps, but modestly.** The trained Splink model reached 0.27
 at identical precision, or 0.30 accepting a small precision cost.

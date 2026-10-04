@@ -22,10 +22,13 @@ The `truth_threshold` column in that table is in **match weight** units
 message. Use the `match_probability` column of the same table.
 ```
 
-**Read the precision–recall curve, not the ROC curve.** With 4,500 matches among
-810 million possible pairs, the classes are so unbalanced that an ROC curve looks
-flattering: its false-positive rate has an enormous denominator. The
-precision–recall curve shows where the cliff is.
+**Read the precision–recall curve, not the ROC curve.** When non-matches vastly
+outnumber matches, an ROC curve looks flattering: its false-positive rate is a
+share of all the non-matches, so even a large number of wrongly accepted pairs
+barely moves it. Splink computes both curves over the scored candidate pairs
+(here 8,868, of which 6,986 are non-matches), so blocking has already removed
+most of the imbalance. Even so, the precision–recall curve is the one that shows
+the cost directly, in wrongly accepted pairs, and where the cliff is.
 
 ### Why "maximise F1" should not be a reflex
 
