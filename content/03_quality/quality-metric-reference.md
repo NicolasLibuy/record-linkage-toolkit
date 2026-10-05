@@ -157,7 +157,7 @@ Errors falling evenly inflate variance and can often be adjusted for. Errors
 concentrated in a group **bias** every comparison involving that group.
 
 On this toolkit's data, at the F1-optimal threshold, recall is 0.19 for the
-shortest given names against 0.47 for the longest, and around a third lower for
+shortest given names against 0.47 for the longest, and roughly 40% lower for
 records with a missing sex or nationality. The gradient persists at every
 threshold. Nothing in the model treats those groups differently; short names
 simply carry less information. That is how a technical property becomes a

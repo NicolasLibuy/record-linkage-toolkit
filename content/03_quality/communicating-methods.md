@@ -137,15 +137,16 @@ published:
 >
 > **Reachability.** The four blocking rules admit only 41.8% of true matches as
 > candidate pairs. Recall against what blocking allowed is therefore 0.67, and
-> the shortfall attributable to blocking (2,618 matches) is roughly ten times
-> that attributable to the model (272 matches at the F1-optimal threshold).
+> the shortfall attributable to blocking (2,618 matches) is about four times
+> that attributable to the model at this threshold (620 matches).
 > Blocking, not the model, is the binding constraint on this linkage.
 >
 > **Differential error.** Linkage rates vary substantially with the length of the
 > given name: 12% of true matches are found for names of six characters or fewer,
 > against 40% for names of sixteen or more. Records with a missing sex or
-> nationality field are linked at roughly two thirds the rate of complete
-> records. Any analysis comparing groups that differ in naming conventions or in
+> nationality field fare worse still: 7% of true matches are found where sex is
+> missing and 13% where nationality is missing, against about 28% where the
+> field is present. Any analysis comparing groups that differ in naming conventions or in
 > data completeness should treat part of the observed difference as an artefact
 > of linkage.
 >
@@ -189,14 +190,15 @@ slightly different parameters, slightly different scores, and — where a thresh
 is chosen by optimising something — a different threshold.
 
 Chapter 2.9 measures it: estimating one *u* parameter three times at a sample of
-10,000 pairs gave 0.000418, 0.000506 and 0.000169. At a million pairs the spread
-narrows by roughly an order of magnitude but never closes.
+10,000 pairs gave 0.000092, 0.000195 and 0.000222. At a million pairs the spread
+narrows about sevenfold but never closes.
 
 This is a genuine, unfixable-by-us failure of item 3, and pretending otherwise
 would be exactly the kind of documentation this chapter is arguing against. The
 mitigation is item 4: **train once, save the model, and version it**. Every
-chapter of this toolkit that quotes precise figures loads the saved model rather
-than re-training, and the model file ships with the repository for that reason.
+chapter after 2.6 that quotes precise figures loads the saved model rather than
+re-training; chapter 2.9 re-trains deliberately, to show what happens when you
+do not. The model file ships with the repository for that reason.
 
 ### Item 5: a pin we did not know we needed
 
