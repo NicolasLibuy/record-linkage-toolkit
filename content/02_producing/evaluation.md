@@ -99,7 +99,7 @@ On the bundled data, recall by subgroup at the F1-optimal threshold:
 | Sex: **missing** | 134 | 28 | **0.2090** |
 
 By nationality and sex the differences are modest. But records where those fields
-are **missing** are linked at roughly two thirds the rate of everyone else — and
+are **missing** are linked at about 60% of the rate of everyone else — and
 records with incomplete identifying information belong disproportionately to
 people who are least well served by administrative systems in the first place.
 
