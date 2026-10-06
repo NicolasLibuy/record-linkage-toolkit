@@ -106,5 +106,5 @@ question the real project will have to answer.
 
 Step 7 usually reveals that the binding constraint is not technical — which is
 the finding [Section 4](../04_production/adoption-challenges.md) reports from
-eight national teams, and the reason to reach it early rather than after the
+the five national teams that submitted a proposal, and the reason to reach it early rather than after the
 model is built.

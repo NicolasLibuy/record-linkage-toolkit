@@ -40,6 +40,7 @@ beyond the equality rules and sorted neighbourhood shown here.
 
 **Herzog, T. N., Scheuren, F. J. and Winkler, W. E. (2007).** *Data Quality and
 Record Linkage Techniques.* Springer.
+[doi:10.1007/0-387-69505-2](https://doi.org/10.1007/0-387-69505-2)
 
 Written from inside official statistics, by authors from the US statistical
 system. Stronger than Christen on the relationship between **data quality** and
@@ -48,6 +49,7 @@ repay reading before you design a cleaning pipeline.
 
 **Harron, K., Goldstein, H. and Dibben, C. (eds, 2015).** *Methodological
 Developments in Data Linkage.* Wiley.
+[doi:10.1002/9781119072454](https://doi.org/10.1002/9781119072454)
 
 An edited collection, uneven as they all are, but the chapters on **linkage error
 and its effect on analysis** are the best treatment of the question this toolkit
@@ -84,7 +86,8 @@ standardise.
 
 **Enamorado, T., Fifield, B. and Imai, K. (2019).** *Using a Probabilistic Model
 to Assist Merging of Large-Scale Administrative Records.* American Political
-Science Review.
+Science Review, 113(2), 353–371.
+[doi:10.1017/S0003055418000783](https://doi.org/10.1017/S0003055418000783)
 
 The paper behind `fastLink`. Its treatment of **missing data** within the
 Fellegi–Sunter framework is more explicit than most, and worth reading even if
@@ -106,13 +109,15 @@ fail.
 **Office for National Statistics.** [*Data linkage and matching
 policy.*](https://www.ons.gov.uk/aboutus/transparencyandgovernance/datastrategy/datapolicies/datalinkageandmatchingpolicy)
 
-Two pages, and the most useful two pages on this list for anyone trying to
+Short, and among the most useful documents on this list for anyone trying to
 institutionalise linkage. It sets out a governance structure, a purpose test, and
 explicit quality rules — precision and recall must always be reported, and match
 rates must not be used as a quality metric.
 
-**Instituto Nacional de Estadísticas (Chile) (2024).** *Guide to quality
-indicators for administrative registers*, v1.0.
+**Instituto Nacional de Estadísticas (Chile) (2024).**
+[*Guía de indicadores para la evaluación de la calidad de los registros
+administrativos*](https://www.ine.gob.cl/docs/default-source/buenas-practicas/directrices-metodologicas/medicion-de-la-calidad/registros-administrativos/gu%C3%ADa-de-indicadores-para-evaluar-calidad-de-los-registros-administrativos.pdf)
+(guide to quality indicators for administrative registers), first version.
 
 Nineteen indicators for administrative register quality, two of them about
 linkage directly. Useful as a model for measuring register quality as a routine

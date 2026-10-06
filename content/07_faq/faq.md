@@ -14,9 +14,10 @@ If your question is not here, [open an issue](https://github.com/NicolasLibuy/re
 
 No, but someone on the team does. The Python this toolkit uses is reading files,
 cleaning strings, grouping and counting. If nobody in the office can do that,
-[Building the capability](../06_reference/open-source-courses.md) is a two-week
-route, and RELAIS in [Software](../06_reference/software.md) is a route that needs
-no programming at all.
+[Building the capability](../06_reference/open-source-courses.md) is a two- to
+three-week route, and RELAIS in [Software](../06_reference/software.md) is a route
+that needs no programming at all, though it has its own software dependencies to
+check first.
 
 ### Can I work through this without any data?
 
@@ -91,7 +92,7 @@ you can vary the level and compare results.
 Be careful: that decision is usually taken by accident. In the toolkit's data,
 requiring four fields to be present excludes about 15% of records — and those
 records belong disproportionately to people with incomplete administrative
-histories, whose linkage rate is already a third lower than everyone else's.
+histories, whose linkage rate is already roughly 40% lower than everyone else's.
 Dropping them is a decision about *who your statistics represent*, and it should
 be recorded as one.
 
@@ -168,7 +169,8 @@ unrecoverable by any model or threshold.
 ### My recall is low. Should I improve the model?
 
 Check the blocking first. In this toolkit's data, blocking discarded roughly ten
-times as many true matches as the model missed. Attention naturally goes to the
+times as many true matches as the model missed at the F1-optimal threshold, and
+about four times as many at the stricter 0.90. Attention naturally goes to the
 model because the model is the interesting part; the data usually says the
 bottleneck is upstream.
 
@@ -332,4 +334,5 @@ Chile as the source of the frequency structure the synthetic data reproduces.
 
 The criterion is implementation: linkage in production or in use for official
 statistics, not a proposal. See
-[Contributors](../00_front/contributors.md).
+[Country case examples](../05_practices/country-case-examples.md) for what to
+include and how to submit it.

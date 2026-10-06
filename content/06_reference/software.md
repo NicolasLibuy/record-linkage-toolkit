@@ -81,6 +81,13 @@ maps closely onto the structure of [Section 2](../02_producing/defining-the-use-
 of this toolkit. An office that follows Section 2's *reasoning* and implements it
 in RELAIS is doing the same thing by other means.
 
+Check two things before committing to it. Istat's own page states that the
+software "does not comply with the IT infrastructure requirements adopted by
+Istat and, as a result, cannot be used within the Institute", although it "can,
+however, be used freely outside of Istat". And it depends on a Java development
+kit, R with several packages, and a MySQL server, which an office without
+programming capacity may also lack the IT support to install and maintain.
+
 ### fastLink (R)
 
 [fastLink](https://github.com/kosukeimai/fastLink) implements the Fellegi–Sunter
@@ -111,7 +118,7 @@ is a rare thing to be able to read.
 |:--|:--|
 | Has Python capacity and wants scale | **Splink** |
 | Has R capacity | **fastLink** |
-| Has no programming capacity | **RELAIS** |
+| Has no programming capacity | **RELAIS**, after checking its dependencies and maintenance status |
 | Already runs Spark | **Splink on Spark**, or the ONS PySpark functions |
 | Is doing a small one-off exploration | **recordlinkage**, or Splink on DuckDB |
 
