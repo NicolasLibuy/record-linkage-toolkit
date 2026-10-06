@@ -49,3 +49,7 @@ sphinx:
     linkcheck_ignore:
       - "https://doi\\.org/10\\.1080/01621459\\.1969\\.10501049"
       - "https://doi\\.org/10\\.1177/2053951717745678"
+      # INE Uruguay serves this PDF with a certificate chain that Python's
+      # certificate store cannot verify. The URL is correct: the document was
+      # downloaded from it and checked identical to the copy the chapter cites.
+      - "https://www5\\.ine\\.gub\\.uy/.*"

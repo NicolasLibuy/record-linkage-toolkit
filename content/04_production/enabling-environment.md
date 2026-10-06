@@ -28,8 +28,8 @@ committee. The specific bodies are British; the pattern generalises: **a routine
 self-assessment for ordinary projects, and a named route for escalating the
 unusual ones.**
 
-The ONS policy also states the purpose test plainly — linkage is conducted "only
-for the purposes of producing statistics or undertaking research that serve the
+The ONS policy also states the purpose test plainly — linkage is conducted only
+"for the purposes of producing statistics or undertaking research that serve the
 public good". A statement of that kind is worth having, because it is what makes
 the answer to "why are you combining these records?" institutional rather than
 personal.
@@ -128,8 +128,11 @@ An office that measures these routinely knows before a project starts whether it
 registers can support the linkage. That is a materially different position from
 discovering it during the pilot.
 
-*Source: Instituto Nacional de Estadísticas (Chile), guide to quality indicators
-for administrative registers, v1.0, March 2024.*
+*Source: Instituto Nacional de Estadísticas (Chile),
+[*Guía de indicadores para la evaluación de la calidad de los registros
+administrativos*](https://www.ine.gob.cl/docs/default-source/buenas-practicas/directrices-metodologicas/medicion-de-la-calidad/registros-administrativos/gu%C3%ADa-de-indicadores-para-evaluar-calidad-de-los-registros-administrativos.pdf)
+(guide to quality indicators for administrative registers), first version, March
+2024.*
 
 ## 5. Staffing
 
@@ -142,6 +145,9 @@ methodological advice. That is the shape that works: a small permanent team with
 the method as part of its remit, rather than a task assigned to whoever is
 available.
 
+*Source: Instituto Nacional de Estadística (Uruguay),
+[*Metodología del Censo Combinado 2023*](https://www5.ine.gub.uy/documents/CENSO%202023/Metodolog%C3%ADa%20del%20Censo%20Combinado%202023.pdf).*
+
 Minimum viable staffing for an office starting out:
 
 - **two people** who can run and modify the pipeline, so it is not a single point
@@ -151,7 +157,8 @@ Minimum viable staffing for an office starting out:
 - **a named owner** for the pipeline after the pilot ends.
 
 The training programme this toolkit came from recommended country teams of up to
-four, deliberately mixing methodological, subject-matter and IT roles. That mix
+four, deliberately mixing methodological, subject-matter and operational (data
+processing and IT) perspectives. That mix
 matters more than the headcount: a linkage project that is only a methods project
 fails on access, and one that is only an IT project fails on quality.
 

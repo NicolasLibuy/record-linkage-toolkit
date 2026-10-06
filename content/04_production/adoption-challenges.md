@@ -15,9 +15,9 @@ what has to be in place to remove them.
 
 ## An observation worth stating plainly
 
-Across the eight national teams in the training programme this toolkit came out
-of, every team was able to design a linkage. Not one was blocked by the
-methodology. The projects that advanced furthest were those with a legal basis
+Of the eight national teams in the training programme this toolkit came out of,
+five carried a linkage design through to a written proposal. None of those five
+was blocked by the methodology. The projects that advanced furthest were those with a legal basis
 already settled and data already in hand; the projects that stalled, stalled on
 access, authorisation and ownership.
 
