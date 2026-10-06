@@ -6,7 +6,7 @@ linkage and are **using it in the production of official statistics**.
 ```{note}
 **This list is currently empty, and that is deliberate.**
 
-The criterion below is implementation, not intention. As of September 2026 no
+The criterion below is implementation, not intention. As of October 2026 no
 case has yet met it and been agreed for publication. Entries will be added
 individually as they qualify.
 ```

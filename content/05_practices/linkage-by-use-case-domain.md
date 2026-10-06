@@ -65,7 +65,7 @@ downstream.
 
 **What an error costs.** Both directions matter, because the register is an input
 to everything else. Uruguay's and Colombia's cases in
-[chapter 5.3](other-practices.md) are both of this kind.
+[chapter 5.2](other-practices.md) are both of this kind.
 
 ## Migration
 
@@ -98,14 +98,15 @@ of most interest may lack one.
 
 **Failure modes.** The unit is often the household, not the person, and household
 composition changes. Provisional identifiers issued to people whose registration
-is incomplete cannot be compared across systems — the situation this toolkit's
-synthetic data reproduces.
+is incomplete cannot be compared across systems, so those records have to be
+linked on names and other characteristics. That is the situation behind this
+toolkit's synthetic data ([chapter 1.2](../01_why/limits-of-single-source.md)).
 
 **What an error costs.** This is the domain where a false match can directly harm
 an individual, if the linkage informs entitlement rather than statistics. Where
 that is the case, precision should dominate and a clerical review stage is
 usually warranted. Chile's Registro Social de Hogares
-([chapter 5.3](other-practices.md)) is an operational system of this kind.
+([chapter 5.2](other-practices.md)) is an operational system of this kind.
 
 ## Business and economic registers
 
@@ -154,7 +155,7 @@ count of matches is not a count of people.
 **The identifier that exists is rarely universal.** The interesting cases are
 those where an identifier covers most of the population but not all, and where
 its absence is systematic — the foreign-born, the recently arrived, the
-informally employed, the very young. Chapter 5.3's Chilean case is explicit about
+informally employed, the very young. Chapter 5.2's Chilean case is explicit about
 this: the system has a universal identifier and dedicated handling for people
 without one.
 

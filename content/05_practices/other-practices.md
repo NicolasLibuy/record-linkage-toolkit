@@ -7,10 +7,11 @@ example.
 
 ## United Kingdom — 2021 Census to Coverage Survey matching
 
-**Source.** Office for National Statistics, *Quality Control and Quality
-Assurance Strategy for 2021 Census to CCS Person and Household Matching*
-(Shipsey and Edwards, May 2021), Methodological Assurance Review Panel paper
-EAP163.
+**Source.** Office for National Statistics,
+[*Quality Control and Quality Assurance Strategy for 2021 Census to CCS Person and
+Household Matching*](https://uksa.statisticsauthority.gov.uk/wp-content/uploads/2021/11/EAP163-Quality-Control-and-Quality-Assurance-Strategy-for-2021-Census-to-CCS-Person-and-Household-Matching.pdf)
+(Shipsey and Edwards, May 2021), paper EAP163, published by the UK Statistics
+Authority.
 
 Matching the Census Coverage Survey to the census is part of producing the
 population estimate, and the office notes that the estimation process "does not
@@ -54,8 +55,8 @@ describes.
 
 ## Uruguay — Combined Census 2023
 
-**Source.** Instituto Nacional de Estadística, methodological documentation of
-the *Censo Combinado 2023*.
+**Source.** Instituto Nacional de Estadística (Uruguay),
+[*Metodología del Censo Combinado 2023*](https://www5.ine.gub.uy/documents/CENSO%202023/Metodolog%C3%ADa%20del%20Censo%20Combinado%202023.pdf).
 
 Uruguay's 2023 census combined field enumeration with a population register
 (REPoR). Probabilistic linkage is not a pilot here: it is inside the production
@@ -79,8 +80,9 @@ census counts depends on where that threshold sits, and the office says so.
 
 ## Colombia — Statistical Population Base Register (REBP) 2018
 
-**Source.** Departamento Administrativo Nacional de Estadística, report on the
-*Registro Estadístico Base de Población* 2018.
+**Source.** Departamento Administrativo Nacional de Estadística,
+[*Registro Estadístico Base Población REBP 2018*](https://www.dane.gov.co/files/investigaciones/poblacion/informes-estadisticas-sociodemograficas/2021-10-01-Registro-Estadistico-Base-Poblacion-REBP-2018.pdf),
+Informes de Estadística Sociodemográfica Aplicada no. 4 (2021).
 
 DANE built a statistical population register from administrative sources and
 compared it against the 2018 census. The report is valuable for its candour about
@@ -119,8 +121,9 @@ access negotiated source by source — reported by an office that lived it.
 
 ## Chile — Registro Social de Hogares
 
-**Source.** Ministerio de Desarrollo Social y Familia, documentation of the
-*Registro Social de Hogares*.
+**Source.** Ministerio de Desarrollo Social and World Bank,
+[*Registro Social de Hogares de Chile*](https://igualdad.cepal.org/es/digital-library/registro-social-de-hogares-de-chile)
+(Santiago, February 2018; ISBN 978-956-326-042-7).
 
 A contrasting case, and the reason it is included.
 
@@ -139,19 +142,22 @@ But the system also has explicit provision for **foreign persons without a RUN**
 including their incorporation into the register. That detail is the whole of
 [chapter 1.2](../01_why/limits-of-single-source.md)'s argument in one line: even a
 universal identifier is not universal, and the population it misses is
-systematic — here, the foreign-born. An identifier-based linkage that ignores that
-group produces statistics that quietly exclude them.
+systematic — here, foreign residents without a RUN. An identifier-based linkage
+that ignores that group produces statistics that quietly exclude them.
 
-This is also the case that motivates this toolkit's synthetic data, which
-reproduces the Chilean situation of a national identifier alongside provisional
-identifiers that cannot be compared across systems.
+The same gap, in a different part of the Chilean state, is behind this toolkit's
+synthetic data. Health-insurance and social-security records held under a
+provisional number rather than the RUN cannot be followed from one system to
+another, and the synthetic registers were built to develop the probabilistic
+linkage those records need ([chapter 1.2](../01_why/limits-of-single-source.md)).
 
 ## What these four have in common
 
 **Nobody relies on one method.** Every case that could combine deterministic and
 probabilistic did.
 
-**Quality targets are set before building, and translated into counts.**
+**Where quality targets exist, they are set before building** — and the UK
+translates them into counts.
 
 **The uncertain middle is staffed, not thresholded away.** Where the stakes are
 high enough, clerical review is a stage of the pipeline with people assigned to
