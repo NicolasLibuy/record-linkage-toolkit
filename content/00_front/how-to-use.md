@@ -43,9 +43,12 @@ source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-That installs pandas, Splink, DuckDB and the handful of other packages the
-notebooks use. Splink runs on DuckDB in memory here, which needs no database
-server and no configuration; at national scale it also runs on Spark and other
+That installs JupyterLab, pandas, Splink, DuckDB and the handful of other packages
+the notebooks use. Start JupyterLab from the repository folder with
+`jupyter lab`, and open the notebooks from the `content` folder.
+
+Splink runs on DuckDB in memory here, which needs no database server and no
+configuration; at national scale it also runs on Spark and other
 backends.
 
 Then open any notebook and run it top to bottom. Each one is self-contained: it
