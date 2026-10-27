@@ -1,4 +1,4 @@
-# Communicating results
+# 3.2 Communicating results
 
 Four diagnostic charts come out of a linkage model, and none of them belongs in a
 statistical bulletin. They are instruments for the team that built the linkage.

@@ -1,4 +1,4 @@
-# Related toolkits and projects
+# 6.3 Related toolkits and projects
 
 Four resources that sit alongside this one. For each, what it covers, and how it
 relates to what you have just read — including where it does the job better.

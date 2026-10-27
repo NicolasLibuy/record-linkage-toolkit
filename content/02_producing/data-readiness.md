@@ -1,4 +1,4 @@
-# Data readiness and preparation
+# 2.2 Data readiness and preparation
 
 You now know what you are trying to produce. This chapter asks whether the
 sources can deliver it, and turns them into something a linkage method can

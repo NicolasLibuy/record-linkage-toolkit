@@ -1,4 +1,4 @@
-# Communicating and documenting a linkage
+# 3.1 Communicating and documenting a linkage
 
 A linked dataset without a quality statement is not a statistical product. It is
 a file that somebody will use anyway, drawing conclusions whose reliability

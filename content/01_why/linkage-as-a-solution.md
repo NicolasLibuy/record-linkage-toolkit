@@ -1,4 +1,4 @@
-# Record linkage as a solution
+# 1.3 Record linkage as a solution
 
 ## What record linkage is
 

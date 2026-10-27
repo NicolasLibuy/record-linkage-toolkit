@@ -1,4 +1,4 @@
-# Implementing the model in Splink
+# 2.6 Implementing the model in Splink
 
 Chapter 2.4 built a Fellegi–Sunter model by hand and reached an uncomfortable
 conclusion: it did not beat a hand-written deterministic rule. The reason was not

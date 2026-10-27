@@ -1,4 +1,4 @@
-# The whole pipeline, end to end
+# 2.9 The whole pipeline, end to end
 
 Chapters 2.2 to 2.8 took one step at a time, stopping to explain each decision.
 This chapter runs all of them in one pass, so you can see the shape of a complete

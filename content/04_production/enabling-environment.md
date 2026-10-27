@@ -1,4 +1,4 @@
-# The enabling environment
+# 4.2 The enabling environment
 
 The previous chapter listed what stops linkage projects. This one describes what
 a settled arrangement looks like, using structures that statistical offices have

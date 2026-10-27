@@ -1,4 +1,4 @@
-# Evaluating a linkage
+# 2.8 Evaluating a linkage
 
 Every number in this section so far was scored against a ground truth. Real data
 does not come with one, and that is not a detail — it is the central difficulty

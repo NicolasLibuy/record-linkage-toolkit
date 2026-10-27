@@ -1,4 +1,4 @@
-# Quality metric reference
+# 3.3 Quality metric reference
 
 Every metric this toolkit uses, in one place: what it means, how it is computed,
 what it hides, and where it appears.

@@ -1,4 +1,4 @@
-# Linkage approaches: deterministic and probabilistic
+# 2.4 Linkage approaches: deterministic and probabilistic
 
 Two records describe two people. Are they the same person? Everything in record
 linkage reduces to answering that question a very large number of times, and

@@ -1,4 +1,4 @@
-# Defining the use case
+# 2.1 Defining the use case
 
 Linkage projects fail for two reasons. The second is technical. The first, and
 much more common, is that nobody wrote down precisely what was being linked to

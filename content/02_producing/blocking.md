@@ -1,4 +1,4 @@
-# Blocking: scalable candidate generation
+# 2.5 Blocking: scalable candidate generation
 
 Comparing two files of sizes $n_1$ and $n_2$ means $n_1 \times n_2$ comparisons.
 That number grows with the *product* of the file sizes, while the number of true

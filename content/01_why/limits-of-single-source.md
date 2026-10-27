@@ -1,4 +1,4 @@
-# What a single source can and cannot tell you
+# 1.2 What a single source can and cannot tell you
 
 Before deciding to link, it is worth being precise about what you are trying to
 escape. The two kinds of data a statistical office works with fail in opposite

@@ -1,4 +1,4 @@
-# Thresholds and clustering
+# 2.7 Thresholds and clustering
 
 The model scores pairs. It does not decide anything. This chapter is about the
 three steps that turn scores into a dataset someone can use: choosing a

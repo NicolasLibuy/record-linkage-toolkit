@@ -1,4 +1,4 @@
-# Building the capability
+# 6.4 Building the capability
 
 This toolkit assumes working familiarity with Python and no previous experience
 of probabilistic linkage. If the first of those is missing, that is a gap worth

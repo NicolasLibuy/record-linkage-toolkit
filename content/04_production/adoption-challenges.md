@@ -1,4 +1,4 @@
-# Why linkage projects stall
+# 4.1 Why linkage projects stall
 
 Section 2 ends with a working pipeline. That is not the same thing as a
 statistical output, and the distance between them is where most linkage projects

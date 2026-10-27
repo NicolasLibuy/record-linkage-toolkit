@@ -1,4 +1,4 @@
-# Linkage by domain
+# 5.1 Linkage by domain
 
 Record linkage looks different depending on what is being linked. The method is
 the same; the identifiers available, the failure modes, and what an error costs

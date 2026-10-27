@@ -1,4 +1,4 @@
-# The demand for linked data
+# 1.1 The demand for linked data
 
 Statistical offices are increasingly asked questions that no single source can
 answer.

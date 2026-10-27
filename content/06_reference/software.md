@@ -1,4 +1,4 @@
-# Software
+# 6.1 Software
 
 This toolkit is built on Python and Splink, and says so on the cover. That is a
 deliberate narrowing: committing to one stack is what lets it show a complete

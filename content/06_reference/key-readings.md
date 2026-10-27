@@ -1,4 +1,4 @@
-# Key readings
+# 6.2 Key readings
 
 A short list. Each entry says what it is for, so you can tell whether it is worth
 your time before opening it.

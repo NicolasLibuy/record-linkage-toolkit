@@ -1,4 +1,4 @@
-# Anonymisation and safe data preparation
+# 2.3 Anonymisation and safe data preparation
 
 Linkage needs identifying information. Data protection exists to limit who sees
 identifying information. This chapter is about the standard way of holding both

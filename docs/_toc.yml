@@ -16,14 +16,12 @@ parts:
         title: The synthetic sample data
 
   - caption: 1. Why record linkage matters
-    numbered: true
     chapters:
       - file: content/01_why/demand-for-linked-data.md
       - file: content/01_why/limits-of-single-source.md
       - file: content/01_why/linkage-as-a-solution.md
 
   - caption: 2. Producing linked data
-    numbered: true
     chapters:
       - file: content/02_producing/defining-the-use-case.md
       - file: content/02_producing/data-readiness.md
@@ -54,7 +52,6 @@ parts:
           - file: content/02_producing/nb10-end-to-end.ipynb
 
   - caption: 3. Communicating and assessing quality
-    numbered: true
     chapters:
       - file: content/03_quality/communicating-methods.md
       - file: content/03_quality/communicating-results.md
@@ -63,20 +60,17 @@ parts:
       - file: content/03_quality/quality-metric-reference.md
 
   - caption: 4. From pilot to production
-    numbered: true
     chapters:
       - file: content/04_production/adoption-challenges.md
       - file: content/04_production/enabling-environment.md
 
   - caption: 5. Country practices
-    numbered: true
     chapters:
       - file: content/05_practices/linkage-by-use-case-domain.md
       - file: content/05_practices/other-practices.md
       - file: content/05_practices/country-case-examples.md
 
   - caption: 6. Reference materials
-    numbered: true
     chapters:
       - file: content/06_reference/software.md
       - file: content/06_reference/key-readings.md
