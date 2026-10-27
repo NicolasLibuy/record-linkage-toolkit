@@ -146,5 +146,5 @@ Narrative and data are released under CC BY 4.0; code under the MIT licence. See
 [`LICENSE`](https://github.com/NicolasLibuy/record-linkage-toolkit/blob/main/LICENSE)
 and [`CITATION.cff`](https://github.com/NicolasLibuy/record-linkage-toolkit/blob/main/CITATION.cff).
 
-Prepared by Nicolas Libuy for the United Nations Statistics Division under the
-Data for Now initiative.
+Prepared by the United Nations Statistics Division under the Data for Now
+initiative, with Nicolas Libuy as lead drafter.

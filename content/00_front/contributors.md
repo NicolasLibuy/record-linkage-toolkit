@@ -1,15 +1,14 @@
 # Contributors
 
-This toolkit was prepared under the United Nations Statistics Division's
-**Data for Now** initiative.
+## Acknowledgement
 
-## Authorship and coordination
+This toolkit was prepared by the United Nations Statistics Division (UNSD) under
+the **Data for Now** initiative.
 
-**Nicolas Libuy** wrote the toolkit and led the training programme it draws on.
-
-The **United Nations Statistics Division** commissioned and coordinated the work
-and reviewed the toolkit's scope and structure, through **Faryal Ahmed** and
-**Samrat Maskey**.
+UNSD wishes to acknowledge **Mr. Nicolas Libuy**, UNSD consultant, and the lead
+drafter of this toolkit. It was prepared under the overall guidance and direction
+of **Faryal Ahmed**, Statistician and Coordinator of the Data for Now initiative,
+and **Samrat Maskey**, Statistician at UNSD.
 
 ## Participating national statistical offices
 
@@ -26,17 +25,19 @@ shaped what the toolkit covers and how much detail each step needed:
 - Somalia — National Bureau of Statistics
 - State of Palestine — Palestinian Central Bureau of Statistics
 
-## Guest contributions
+## Contributors
 
-Practitioners from four national institutions presented their own linkage work
-during the programme:
+Sincere appreciation goes to the following experts, who contributed to the
+toolkit and/or provided technical input through the training programme:
 
-- **Instituto Nacional de Estadísticas (INE), Chile**
-- **Departamento Administrativo Nacional de Estadística (DANE), Colombia**
-- **Australian Bureau of Statistics (ABS)**
-- **Ministerio de Desarrollo Social y Familia, Chile**, on the *Registro de
-  Información Social*, a long-running operational example of administrative
-  data integration in government
+- **Eduardo Larraguibel**, Instituto Nacional de Estadísticas (INE), Chile
+- **Paula Jaramillo**, Departamento Administrativo Nacional de Estadística
+  (DANE), Colombia
+- **Tessa Nunan**, Australian Bureau of Statistics (ABS)
+- **Andrés Mauricio Alarcón Palominos**, **Alexis Torres Álvarez** and
+  **Carlos Enrique Arce Martínez**, Ministerio de Desarrollo Social y Familia,
+  Chile, on the *Registro de Información Social*, a long-running operational
+  example of administrative data integration in government
 
 ## Data
 
